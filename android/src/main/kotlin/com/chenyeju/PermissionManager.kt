@@ -22,13 +22,13 @@ class PermissionManager {
                 context,
                 Manifest.permission.CAMERA
             )
-            val hasStoragePermission = PermissionChecker.checkSelfPermission(
-                context,
-                Manifest.permission.WRITE_EXTERNAL_STORAGE
-            )
+//            val hasStoragePermission = PermissionChecker.checkSelfPermission(
+//                context,
+//                Manifest.permission.WRITE_EXTERNAL_STORAGE
+//            )
             
             return hasCameraPermission == PermissionChecker.PERMISSION_GRANTED
-                && hasStoragePermission == PermissionChecker.PERMISSION_GRANTED
+//                && hasStoragePermission == PermissionChecker.PERMISSION_GRANTED
         }
         
         /**
@@ -48,7 +48,7 @@ class PermissionManager {
                 activity,
                 arrayOf(
                     Manifest.permission.CAMERA,
-                    Manifest.permission.WRITE_EXTERNAL_STORAGE,
+//                    Manifest.permission.WRITE_EXTERNAL_STORAGE,
                 ),
                 PERMISSION_REQUEST_CODE
             )
